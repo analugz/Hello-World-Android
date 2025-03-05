@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!-- Campo de texto para o usuário digitar o nome -->
@@ -19,24 +18,12 @@
         android:gravity="center"
         android:layout_margin="16dp" />
 
-    <!-- Botão para atualizar a mensagem -->
-    <Button
-        android:id="@+id/btnUpdateMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Atualizar Mensagem"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:padding="16dp"
-        android:minHeight="48dp"
-        android:minWidth="200dp" />
-
-    <!-- Texto que exibirá a mensagem "Hello, {nome}" -->
+    <!-- Texto que exibirá o Hello World, incrementado com o nome -->
     <TextView
         android:id="@+id/tvHelloMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Hello World!"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
